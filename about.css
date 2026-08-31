@@ -47,9 +47,7 @@ html, body {
 .hero h1 {
     font-size: 70px;
 }
-.hero-top {
-    padding-top: 170px;
-}
+
 .hero .btn {
     width: 190px;
 }
