@@ -104,3 +104,12 @@ color: #FFFFFF;
 .footer a:hover {
     color: white;
 }
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+@media (max-width: 576px) {
+    .navbar {
+        border-radius: 0 !important;
+    }
+}

@@ -120,3 +120,12 @@ background: linear-gradient(330deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 25
 .footer a {
     transition: all 3s ease;
 }
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+@media (max-width: 576px) {
+    .navbar {
+        border-radius: 0 !important;
+    }
+}

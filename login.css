@@ -138,3 +138,7 @@ body {
   background-color: red;
   color: white;
 }
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}

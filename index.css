@@ -6,8 +6,17 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: "Outfit", sans-serif;
 }
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
 .explore {
     font-size: 75px;
+}
+@media (max-width: 576px) {
+    .navbar {
+        border-radius: 0 !important;
+    }
 }
 .navbar {
     right: 20px;
@@ -197,4 +206,3 @@ background: linear-gradient(330deg, rgba(238, 247, 248, 1) 3%, rgba(238, 247, 24
   transform: rotate(250deg);
   transition-duration: 1.5s;
 }
-
