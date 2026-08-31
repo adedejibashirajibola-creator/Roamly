@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+.navbar {
+    right: 20px;
+    left: 20px;
+    background-color: rgba(45, 47, 48, 0.475);
+    backdrop-filter: blur(20px);
+    filter: contrast(50px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    border: 3px solid rgba(45, 47, 48, 0.475);
+}
+.navbar .nav-link:hover {
+    color: #ffc107 !important;
+    transform: scale(1.05);
+}
+.navbar .navbar-brand:hover {
+    color: #ffc107 !important;
+    transform: scale(1.05);
+}
+.navbar .btn:hover {
+    transform: translateY(-8px);
+}
+.navbar .btn {
+    transition: all 3s ease;
+}
+.hero {
+    background-image: url(images/for.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    height: 100vh;;
+}
+.hero h1 {
+    font-size: 70px;
+}
+.hero-top {
+    padding-top: 170px;
+}
+.hero .btn {
+    width: 190px;
+}
+.hero {
+    background-image: url(images/book.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    height: 100vh;
+}
+.hero h1 {
+    font-size: 70px;
+}
+.hero-top {
+    padding-top: 170px;
+}
+.hero .btn {
+    width: 190px;
+}
+.cta {
+    background-image: url(images/tour-cta-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    height: 100vh;
+}
+.cta h1 {
+    font-size: 80px;
+}
+.button {
+  width: 150px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  background-color: rgb(243, 223, 4);
+  border-radius: 30px;
+  color: rgb(248, 248, 248);
+  font-weight: 600;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  transition-duration: .2s;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.116);
+  padding-left: 8px;
+  transition-duration: .5s;
+}
+
+.svgIcon {
+  height: 25px;
+  transition-duration: 1.5s;
+}
+
+.bell path {
+  fill: rgb(19, 19, 19);
+}
+
+.button:hover {
+  background-color: rgb(192, 255, 20);
+  transition-duration: .5s;
+}
+
+.button:active {
+  transform: scale(0.97);
+  transition-duration: .2s;
+}
+
+.button:hover .svgIcon {
+  transform: rotate(250deg);
+  transition-duration: 1.5s;
+}
+.footer {
+   padding: 70px 0 20px;
+   background: #3a84cf;
+background: linear-gradient(0deg, rgba(58, 132, 207, 1) 0%, rgba(11, 31, 51, 1) 100%);
+color: #FFFFFF;
+}
+.footer a:hover {
+    color: white;
+}

@@ -1,0 +1,585 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Roamly</title>
+  </head>
+  <body>
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-animate rounded-pill p-3 mt-3">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold" href="index.html">Roamly</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarScroll">
+      <ul class="navbar-nav mx-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+        <li class="nav-item">
+          <a class="nav-link active fw-bold" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-bold" href="destination.html">Destinations</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link fw-bold" href="tours.html">Tours</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link fw-bold" href="about.html">About</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link fw-bold" href="contact.html">Contact</a>
+        </li>
+      </ul>
+      <form class="d-flex gap-2">
+        <button class="btn btn-outline-warning" type="submit"><a href="login.html" class="text-decoration-none text-warning">Login</a></button>
+        <button class="btn btn-outline-warning" type="submit"><a href="book.html" class="text-decoration-none text-warning">Book a Trip</a></button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<main class="hero reveal hero-animate">
+  <div class="container-fluid p-0">
+    <div class="row g-0">
+      <div class="col-12">
+        <div id="carouselExampleInterval" class="carousel slide hero-carousel" data-bs-ride="carousel">
+          
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="1000">
+              <img src="images/hero-image.jpg" class="d-block w-100" alt="hero-image">
+            </div>
+
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="images/se.jpg" class="d-block w-100" alt="hero-image">
+            </div>
+
+            <div class="carousel-item">
+              <img src="images/sunset.jpg" class="d-block w-100" alt="hero-image">
+            </div>
+
+            <div class="carousel-item">
+              <img src="images/for.jpg" class="d-block w-100" alt="hero-image">
+            </div>
+
+            <div class="carousel-item">
+              <img src="images/Fotografía en Tokyo.jpg" class="d-block w-100" alt="hero-image">
+            </div>
+
+            <div class="carousel-item">
+              <img src="images/statue of liberty.jpg" class="d-block w-100" alt="hero-image">
+            </div>
+
+            <div class="carousel-item">
+              <img src="images/Eiffel tower.jpg" class="d-block w-100" alt="hero-image">
+            </div>
+
+            <div class="carousel-item">
+              <img src="images/fi.jpg" class="d-block w-100" alt="hero-image">
+            </div>
+
+             <div class="carousel-item">
+              <img src="images/country.jpg" class="d-block w-100" alt="hero-image">
+            </div>
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+
+<section class="booking-section py-5 reveal">
+    <div class="container">
+        <form class="booking-box gap-5 bg-light p-5 rounded d-sm-block d-lg-flex">
+
+            <div class="booking-field">
+                <label for="destination" class="fw-bold">Where to?</label><br>
+                <input type="text" id="destination" placeholder="Search destination" class="border-0 bg-white p-2 mt-3 rounded">
+            </div>
+
+            <div class="booking-field">
+                <label for="checkin" class="fw-bold">Check in</label><br>
+                <input type="date" id="checkin" class="border-0 bg-white p-2 mt-3 rounded">
+            </div>
+
+            <div class="booking-field">
+                <label for="checkout" class="fw-bold">Check out</label><br>
+                <input type="date" id="checkout" class="border-0 bg-white p-2 mt-3 rounded">
+            </div>
+
+            <div class="booking-field">
+                <label for="travelers" class="fw-bold">Travelers</label><br>
+                <select id="travelers" class="border-0 bg-white p-2 mt-3 rounded">
+                    <option>1 Traveler</option>
+                    <option>2 Travelers</option>
+                    <option>3 Travelers</option>
+                    <option>4 Travelers</option>
+                    <option>5+ Travelers</option>
+                </select>
+            </div>
+
+            <button type="submit" class="search-btn border-0 bg-white p-0 mt-3 rounded-pill w-25">
+                <i class="bi bi-search"></i>
+                Search
+            </button>
+
+        </form>
+    </div>
+</section>
+
+<section class="popular py-5">
+<div class="container">
+  <h1 class="text-center fw-bold text-dark mb-0"> EXPLORE THE WORLD</h1>
+  <h3 class="text-center text-dark mb-0">Popular Destinations</h3>
+  <h5 class="text-center text-dark mb-5">Discover beautiful places around the world.
+</h5>
+<div class="row mb-5">
+  <div class="col-lg-4 col-md-6 col-12 destination-card">
+    <div class="card h-100 popular-animate">
+  <img src="images/paris2.jpg" class="card-img-top img-fluid" alt="Paris, France" loading="lazy">
+  <div class="card-body">
+    <h5 class="card-title fw-bold">Paris, France</h5>
+    <p class="card-text">Discover the City of Light, from the iconic Eiffel Tower to charming streets, cafés, and world-famous landmarks.</p>
+<button class="button">
+   <svg class="svgIcon" viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm50.7-186.9L162.4 380.6c-19.4 7.5-38.5-11.6-31-31l55.5-144.3c3.3-8.5 9.9-15.1 18.4-18.4l144.3-55.5c19.4-7.5 38.5 11.6 31 31L325.1 306.7c-3.2 8.5-9.9 15.1-18.4 18.4zM288 256a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"></path></svg>
+  Explore
+</button>
+
+  </div>
+</div>
+  </div>
+  <div class="col-lg-4 col-md-6 col-12 destination-card">
+    <div class="card h-100 popular-animate">
+  <img src="images/dubai.jpg" class="card-img-top" alt="Dubai, UAE" loading="lazy">
+  <div class="card-body">
+    <h5 class="card-title fw-bold">Dubai, UAE</h5>
+    <p class="card-text">Experience a city of luxury, breathtaking architecture, exciting attractions, and unforgettable desert adventures.</p>
+    <button class="button">
+   <svg class="svgIcon" viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm50.7-186.9L162.4 380.6c-19.4 7.5-38.5-11.6-31-31l55.5-144.3c3.3-8.5 9.9-15.1 18.4-18.4l144.3-55.5c19.4-7.5 38.5 11.6 31 31L325.1 306.7c-3.2 8.5-9.9 15.1-18.4 18.4zM288 256a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"></path></svg>
+  Explore
+</button>
+  </div>
+</div>
+  </div>
+  <div class="col-lg-4 col-md-6 col-12 destination-card">
+    <div class="card h-100 popular-animate">
+  <img src="images/Cape Town.jpg" class="card-img-top" alt="Cape Town, South Africa" loading="lazy">
+  <div class="card-body">
+    <h5 class="card-title fw-bold">Cape Town, South Africa</h5>
+    <p class="card-text">Explore stunning beaches, Table Mountain, vibrant culture, and some of Africa's most beautiful landscapes.</p>
+    <button class="button">
+   <svg class="svgIcon" viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm50.7-186.9L162.4 380.6c-19.4 7.5-38.5-11.6-31-31l55.5-144.3c3.3-8.5 9.9-15.1 18.4-18.4l144.3-55.5c19.4-7.5 38.5 11.6 31 31L325.1 306.7c-3.2 8.5-9.9 15.1-18.4 18.4zM288 256a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"></path></svg>
+  Explore
+</button>
+  </div>
+</div>
+  </div>
+  <div class="col-lg-4 col-md-6 col-12 destination-card">
+    <div class="card h-100 mt-5 popular-animate">
+  <img src="images/lagos.jpg" class="card-img-top img-fluid" alt="Lagos, Nigeria" loading="lazy">
+  <div class="card-body">
+    <h5 class="card-title fw-bold">Lagos, Nigeria</h5>
+    <p class="card-text">Experience the energy of Lagos with beautiful beaches, vibrant nightlife, rich culture, and delicious local cuisine.</p>
+    <button class="button">
+   <svg class="svgIcon" viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm50.7-186.9L162.4 380.6c-19.4 7.5-38.5-11.6-31-31l55.5-144.3c3.3-8.5 9.9-15.1 18.4-18.4l144.3-55.5c19.4-7.5 38.5 11.6 31 31L325.1 306.7c-3.2 8.5-9.9 15.1-18.4 18.4zM288 256a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"></path></svg>
+  Explore
+</button>
+  </div>
+</div>
+  </div>
+  <div class="col-lg-4 col-md-6 col-12">
+    <div class="card h-100 mt-5 popular-animate">
+  <img src="images/London, England.jpg" class="card-img-top" alt="London, England" loading="lazy">
+  <div class="card-body">
+    <h5 class="card-title fw-bold">London, England</h5>
+    <p class="card-text">Discover historic landmarks, royal palaces, famous museums, and the unique charm of one of the world's greatest cities.</p>
+    <button class="button">
+   <svg class="svgIcon" viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm50.7-186.9L162.4 380.6c-19.4 7.5-38.5-11.6-31-31l55.5-144.3c3.3-8.5 9.9-15.1 18.4-18.4l144.3-55.5c19.4-7.5 38.5 11.6 31 31L325.1 306.7c-3.2 8.5-9.9 15.1-18.4 18.4zM288 256a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"></path></svg>
+  Explore
+</button>
+  </div>
+</div>
+  </div>
+  <div class="col-lg-4 col-md-6 col-12">
+    <div class="card h-100 mt-5 popular-animate">
+  <img src="images/Mount Fuji & Cherry Blossoms.jpg" class="card-img-top" alt="Tokyo, Japan" loading="lazy">
+  <div class="card-body">
+    <h5 class="card-title fw-bold">Tokyo, Japan</h5>
+    <p class="card-text">Experience the perfect blend of modern technology, ancient traditions, incredible food, and fascinating Japanese culture.</p>
+    <button class="button">
+   <svg class="svgIcon" viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm50.7-186.9L162.4 380.6c-19.4 7.5-38.5-11.6-31-31l55.5-144.3c3.3-8.5 9.9-15.1 18.4-18.4l144.3-55.5c19.4-7.5 38.5 11.6 31 31L325.1 306.7c-3.2 8.5-9.9 15.1-18.4 18.4zM288 256a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"></path></svg>
+  Explore
+</button>
+  </div>
+</div>
+  </div>
+</div>
+</div>
+</section>
+
+<section class="why py-5 reveal">
+  <div class="container py-5">
+    <h1 class="fw-bold fs-1 text-dark">WHY CHOOSE US</h1>
+    <h3 class="fw-bold text-dark">Travel with confidence</h3>
+    <p class="fw-bold text-dark">We make every journey simple and memorable.</p>
+   <div class="row align-items-center">
+
+  <div class="col-lg-6">
+
+    <div class="row g-4">
+
+      <div class="col-md-6 why-card">
+        <div class="card h-100">
+          <img src="images/accept.png" class="card-img-top img-fluid pt-3 px-3" alt="">
+          <div class="card-body">
+            <h3 class="fw-bold">Affordable Prices</h3>
+            <p class="card-text">Enjoy unforgettable trips at competitive prices without compromising on quality, comfort, or experience.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 why-card">
+        <div class="card h-100">
+          <img src="images/handbook_16870860.png" class="card-img-top img-fluid pt-3 px-3" alt="">
+          <div class="card-body">
+            <h3 class="fw-bold">Experienced Guides</h3>
+            <p class="card-text">Travel with knowledgeable guides who help you discover the best places and experiences.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 why-card">
+        <div class="card h-100">
+          <img src="images/secure_12061010.png" class="card-img-top img-fluid pt-3 px-3" alt="">
+          <div class="card-body">
+            <h3 class="fw-bold">Safe & Secure</h3>
+            <p class="card-text">Your safety comes first. We carefully plan every journey so you can travel with confidence.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 why-card">
+        <div class="card h-100">
+          <img src="images/24-hours-support_9364231.png" class="card-img-top img-fluid pt-3 px-3" alt="">
+          <div class="card-body">
+            <h3 class="fw-bold">24/7 Support</h3>
+            <p class="card-text">We're always available to provide assistance and support throughout your journey.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="col-lg-6 mt-4 mt-lg-0 reveal">
+    <div class="d-flex justify-content-center">
+    <img src="images/travel-vibes-studio.jpg" class="img-fluid h-75 rounded w-75 pt-4" alt="Travel">
+    </div>
+  </div>
+</div>
+  </div>
+</section>
+
+<section class="tour py-5">
+  <div class="container">
+    <h1 class="text-center fw-bold text-dark">FEATURED TOUR</h1>
+    <p class="text-center fw-bold mb-4 text-dark">Explore our top pick</p>
+
+    <div class="row align-items-center g-4">
+      <div class="col-lg-6 d-flex justify-content-center">
+        <div class="d-flex align-items-center justify-content-center">
+          <img src="images/paris.jpg" alt="" srcset="" class="img-fluid w-50 rounded ">
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="card h-100 border-0 shadow">
+
+          <div class="card-body p-4">
+
+            <p class="text-success fw-bold mb-1">Destination</p>
+            <h2 class="fw-bold">Paris, France</h2>
+
+            <h3 class="fw-bold mt-4">Discover the Magic of Paris</h3>
+
+            <p class="mt-3">
+              Experience the beauty of Paris as you explore iconic landmarks,
+              charming streets, world-famous museums, and unforgettable local
+              experiences.
+            </p>
+
+            <div class="mt-4">
+              <p class="mb-2"><strong>🕒 Duration:</strong> 5 Days / 4 Nights</p>
+              <p class="mb-2"><strong>⭐ Rating:</strong> 4.9</p>
+              <p class="mb-2"><strong>👥 Group:</strong> Small Group</p>
+            </div>
+
+            <div class="mt-4">
+              <h4 class="fw-bold">From $899 / person</h4>
+              <a href="#" class="btn btn-primary mt-2">Book This Tour</a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+    
+  </div>
+</section>
+
+<section class="works reveal">
+<div class="container">
+  <h1 class="text-dark text-center fw-bold">HOW IT WORKS</h1>
+  <p class="text-dark text-center">Plan your perfect trip in 3 simple steps</p>
+  <h5 class="text-dark text-center fs-2">Follow three simple steps and get ready<br> for your next adventure.</h5>
+  <div class="row d-flex justify-content-center g-4">
+
+  <div class="col-lg-4 col-md-6 col-12">
+    <div class="card h-100 shadow-sm">
+      <div class="card-body">
+        <div class="step-number">01</div>
+        <div class="text-center fs-2">
+          <i class="bi bi-search fs-1 text-primary"></i>
+        </div>
+        <h5 class="card-title fw-bold">Choose Your Tour </h5>
+        <p class="card-text">Browse our destinations and choose a tour that matches your interests, budget, and travel plans.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-4 col-md-6 col-12">
+    <div class="card h-100 shadow-sm">
+      <div class="card-body">
+        <div class="step-number">02</div>
+        <div class="text-center fs-2">
+        <i class="bi bi-book fs-1 text-primary"></i>
+        </div>
+        <h5 class="card-title fw-bold">Make a Booking</h5>
+        <p class="card-text">Select your preferred date, provide your details, and complete your booking in just a few simple steps.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-4 col-md-6 col-12">
+    <div class="card h-100 shadow-sm">
+      <div class="card-body">
+        <div class="step-number">03</div>
+        <div class="text-center fs-2">
+          <i class="bi bi-airplane fs-1 text-primary"></i>
+        </div>
+        <h5 class="card-title fw-bold">Enjoy Your Trip</h5>
+        <p class="card-text">Get ready for your adventure and enjoy a comfortable, exciting, and memorable travel experience.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+</section>
+
+<section class="testimonials py-5 reveal">
+  <div class="container py-5">
+    <h1 class="py-5 text-center fw-bold text-white">TESTIMONIALS</h1>
+    <h4 class="text-center fw-bold text-white">What our travelers say</h4>
+    <p class="text-center text-white">Hear from people who have explored the world with us.</p>
+
+    <div class="row  justify-content-center d-flex">
+  <div class="col-lg-4 col-md-6 col-12">
+        <div class="card h-100 p-3">
+          <div class="card-body">
+            <h5 class="card-title user-select-none">⭐⭐⭐⭐⭐</h5>
+            <p class="card-text">Amazing experience from start to finish..</p>
+            <div class="d-flex gap-3 align-items-center">
+          <img src="images/otto-williams.jpeg" alt="CEO" srcset="" class="img-fluid rounded-circle w-25">
+          <div>
+          <h6 class="fw-bold">Otto Williams</h6>
+          <p class="status">Lagos, Nigeria</p>
+          </div>
+        </div>
+          </div>
+        </div>
+      </div>
+
+    <div class="col-lg-4 col-md-6 col-12">
+        <div class="card h-100 p-3">
+          <div class="card-body">
+            <h5 class="card-title user-select-none">⭐⭐⭐⭐⭐</h5>
+            <p class="card-text">Everything was perfectly planned and enjoyable.</p>
+            <div class="d-flex gap-3 align-items-center">
+              <img src="images/patrick-collison-headshot.jpg" alt="CEO" class="img-fluid rounded-circle w-25">
+              <div>
+                <h6 class="fw-bold">Patrick Collision</h6>
+                <p class="status mb-0">Accra, Ghana</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-12">
+        <div class="card h-100 p-3">
+          <div class="card-body">
+            <h5 class="card-title user-select-none">⭐⭐⭐⭐⭐</h5>
+            <p class="card-text">Our guide was fantastic and the trip was amazing.</p>
+            <div class="d-flex gap-3 align-items-center">
+          <img src="images/michael-siebel-headshot.jpeg" alt="CEO" srcset="" class="img-fluid rounded-circle w-25">
+          <div>
+          <h6 class="fw-bold">Michael Seibel</h6>
+          <p class="status">London, UK</p>
+          </div>
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="faq reveal py-5">
+  <div class="container">
+    <div>
+    <h1 class="text-center py-5 fw-bold text-dark">FAQ</h1>
+    </div>
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingOne">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        1. How do I book a tour?
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Choose your preferred destination, select a tour package, choose your travel date, and complete the booking form.</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+        2. What is included in the tour price?
+      </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Tour packages may include accommodation, transportation, guided activities, and selected meals depending on the package you choose.</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+        3. Can I cancel or change my booking?
+      </button>
+    </h2>
+    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Yes. Cancellation and booking-change options depend on the specific tour package. Check the terms before completing your booking.</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingFour">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+        4. Do you provide tour guides?
+      </button>
+    </h2>
+    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Yes. Selected tours include experienced local guides who can help you explore the destination and make your trip more enjoyable.</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingFive">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+        5. What payment methods do you accept?
+      </button>
+    </h2>
+    <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">We accept several convenient payment methods. Available options will be displayed when you make your booking.</div>
+    </div>
+  </div>
+</div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="row d-flex justify-content-center gap-4">
+      <div class="col-lg-2 col-12">
+        <div>
+          <h3 class="fw-bold">Roamly</h3>
+          <p>Discover the world and create unforgettable memories</p>
+        </div>
+      </div>
+      <div class="col-lg-2 col-12">
+        <div>
+            <h5 class="fw-bold">Company</h5>
+            <div>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-decoration-none text-white">About Us</a></li>
+                <li><a href="#" class="text-decoration-none text-white">Our Tours</a></li>
+                <li><a href="#" class="text-decoration-none text-white">Contact Us</a></li>
+                <li><a href="#" class="text-decoration-none text-white">FAQ</a></li>
+              </ul>
+            </div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-12">
+        <div>
+          <h5 class="fw-bold">Destinations</h5>
+           <div>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-decoration-none text-white">Paris</a></li>
+                <li><a href="#" class="text-decoration-none text-white">Dubai</a></li>
+                <li><a href="#" class="text-decoration-none text-white">Cape Town</a></li>
+                <li><a href="#" class="text-decoration-none text-white">lagos</a></li>
+              </ul>
+            </div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-12">
+        <div>
+          <h5 class="fw-bold">Support</h5>
+           <div>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-decoration-none text-white">Help Center</a></li>
+                <li><a href="#" class="text-decoration-none text-white">Booking Help</a></li>
+                <li><a href="#" class="text-decoration-none text-white">Privacy Policy</a></li>
+                <li><a href="#" class="text-decoration-none text-white">Terms & Condition</a></li>
+              </ul>
+            </div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-12">
+        <div>
+          <h5 class="fw-bold">Follow Us</h5>
+           <div>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-decoration-none text-white">Facebook</a></li>
+                <li><a href="#" class="text-decoration-none text-white">Instagram</a></li>
+                <li><a href="#" class="text-decoration-none text-white">Twitter</a></li>
+                <li><a href="#" class="text-decoration-none text-white">FAQ</a></li>
+              </ul>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </body>
+</html>

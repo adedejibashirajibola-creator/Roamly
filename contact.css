@@ -1,0 +1,68 @@
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Outfit", sans-serif;
+}
+.navbar {
+    right: 20px;
+    left: 20px;
+    background-color: rgba(45, 47, 48, 0.475);
+    backdrop-filter: blur(20px);
+    filter: contrast(50px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    border: 3px solid rgba(45, 47, 48, 0.475);
+}
+.navbar .nav-link:hover {
+    color: #ffc107 !important;
+    transform: scale(1.05);
+}
+.navbar .navbar-brand:hover {
+    color: #ffc107 !important;
+    transform: scale(1.05);
+}
+.navbar .btn:hover {
+    transform: translateY(-8px);
+}
+.navbar .btn {
+    transition: all 3s ease;
+}
+.contact-hero {
+     background-image: url(images/tour-cta-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    height: 100vh;
+}
+.contact-text {
+    padding: 280px 0px;
+}
+.contact-text h1 {
+    font-size: 60px;
+}
+.contact img {
+    width: auto;
+    height: 40px;
+    filter: grayscale(2);
+}
+.location iframe {
+    border: 0;
+    height: 390px;
+}
+.location img {
+    width: auto;
+    height: 20px;
+    filter: grayscale(2);
+}
+footer {
+   padding: 70px 0 20px;
+   background: #3a84cf;
+background: linear-gradient(0deg, rgba(58, 132, 207, 1) 0%, rgba(11, 31, 51, 1) 100%);
+color: #FFFFFF;
+}
+footer a:hover {
+    color: white;
+}

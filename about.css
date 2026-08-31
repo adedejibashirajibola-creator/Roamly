@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+.navbar {
+    right: 20px;
+    left: 20px;
+    background-color: rgba(45, 47, 48, 0.475);
+    backdrop-filter: blur(20px);
+    filter: contrast(50px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    border: 3px solid rgba(45, 47, 48, 0.475);
+}
+.navbar .nav-link:hover {
+    color: #ffc107 !important;
+    transform: scale(1.05);
+}
+.navbar .navbar-brand:hover {
+    color: #ffc107 !important;
+    transform: scale(1.05);
+}
+.navbar .btn:hover {
+    transform: translateY(-8px);
+}
+.navbar .btn {
+    transition: all 3s ease;
+}
+.hero {
+    background-image: url(images/for.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    height: 100vh;;
+}
+.hero h1 {
+    font-size: 70px;
+}
+.hero-top {
+    padding-top: 170px;
+}
+.hero .btn {
+    width: 190px;
+}
+.who {
+    background: #F7F5EF;
+background: linear-gradient(330deg, rgba(247, 245, 239, 1) 3%, rgba(247, 245, 239, 1) 64%, rgba(247, 245, 239, 1) 100%);
+}
+.who img {
+    border-radius: 50px;
+}
+.who img:hover {
+    filter: sepia(2);
+    transition: all 3s ease;
+}
+.we {
+padding: 90px 0px;
+background: #EEF7F8;
+background: linear-gradient(330deg, rgba(238, 247, 248, 1) 3%, rgba(238, 247, 248, 1) 100%);
+}
+.we img:hover {
+    filter: grayscale(1);
+    transition: all 2s ease;
+}
+.we h1 {
+    font-size: 50px;
+}
+.why {
+    padding: 70px 0px;
+}
+.icon img {
+    width: auto;
+    height: 30px;
+}
+.icon img:hover {
+    filter: grayscale(1);
+    transition: all 2s ease;
+}
+.hike img {
+    border-radius: 50px;
+}
+.mission {
+     background-image: url(images/mission.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    height: 100vh;
+}
+.mission h1 {
+    font-size: 90px;
+}
+ 
+.mission-content {
+    padding-top: 90px;
+}
+.adventure {
+ background: #000000;
+background: linear-gradient(330deg, rgba(0, 0, 0, 1) 0%, rgba(0, 1, 13, 1) 100%);;
+}
+.adventure-content {
+    padding: 90px 0px;
+}
+.adventure h1 {
+    font-size: 90px;
+     text-shadow: 4px 12px 15px rgba(0, 180, 216, 0.7);
+}
+.footer {
+   padding: 70px 0 20px;
+   background: #3a84cf;
+background: linear-gradient(0deg, rgba(58, 132, 207, 1) 0%, rgba(11, 31, 51, 1) 100%);
+color: #FFFFFF;
+}
+.footer a:hover {
+    color: white;
+}

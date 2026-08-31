@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+.navbar {
+    right: 20px;
+    left: 20px;
+    background-color: rgba(45, 47, 48, 0.475);
+    backdrop-filter: blur(20px);
+    filter: contrast(50px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    border: 3px solid rgba(45, 47, 48, 0.475);
+}
+.navbar .nav-link:hover {
+    color: #ffc107 !important;
+    transform: scale(1.05);
+}
+.navbar .navbar-brand:hover {
+    color: #ffc107 !important;
+    transform: scale(1.05);
+}
+.navbar .btn:hover {
+    transform: translateY(-8px);
+}
+.navbar .btn {
+    transition: all 3s ease;
+}
+.hero {
+    background-image: url(images/fi.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    height: 100vh;
+}
+.hero h1 {
+    font-size: 70px;
+}
+.hero-top {
+    padding-top: 170px;
+}
+.hero .btn {
+    width: 190px;
+}
+.popular {
+    padding: 90px 0px;
+    background-color: #f7f5ef;
+}
+.destination-card {
+    transition: 3s ease;
+    border-radius: 20px;
+    box-shadow: 2px 12px rgb(234, 240, 243);
+}
+.cape {
+    transition: 3s ease;
+}
+.destination-card:hover {
+    transform: translateY(-6px);
+}
+.destination-card img:hover {
+    transform: rotateY(1.05);
+}
+.we {
+padding: 90px 0px;
+background: #EEF7F8;
+background: linear-gradient(330deg, rgba(238, 247, 248, 1) 0%, rgba(238, 247, 248, 1) 100%);
+}
+.we img:hover {
+    filter: grayscale(1);
+    transition: all 2s ease;
+}
+.we h1 {
+    font-size: 50px;
+}
+.destination {
+    background: #FFFFFF;
+background: linear-gradient(330deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+}
+.popular {
+   background-color: #f7f5ef;
+}
+.popular .card:hover {
+    transition: 3s;
+    transform: translateY(12px);
+}
+.popular-animate {
+    animation: move 5s linear 1s infinite normal none;
+}
+@keyframes move {
+    to {
+        transform: translate(0px);
+    }
+    from {
+        transform: translate(0px, 50px);
+    }
+}
+.next {
+    background-image: url(images/trav.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;;
+}
+.next h1 {
+    font-size: 70px;
+}
+.footer {
+    transition: all 3s ease;
+    padding: 70px 0 20px;
+    background: #3a84cf;
+    background: linear-gradient(0deg, rgba(58, 132, 207, 1) 0%, rgba(11, 31, 51, 1) 100%);
+    color: #FFFFFF;
+}
+.footer a:hover {
+    color: red;
+    transition: 3s ease;
+}
+.footer a {
+    transition: all 3s ease;
+}
