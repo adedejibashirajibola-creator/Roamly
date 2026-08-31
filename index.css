@@ -10,7 +10,11 @@ html, body {
     overflow-x: hidden;
     width: 100%;
 }
-.explore {
+.exp@media (max-width: 576px) {
+    .navbar {
+        border-radius: 0 !important;
+    }
+}lore {
     font-size: 75px;
 }
 @media (max-width: 576px) {
