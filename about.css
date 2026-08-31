@@ -109,3 +109,8 @@ color: #FFFFFF;
 .footer a:hover {
     color: white;
 }
+@media (max-width: 576px) {
+    .navbar {
+        border-radius: 0 !important;
+    }
+}
