@@ -99,17 +99,11 @@ background: linear-gradient(330deg, rgba(238, 247, 248, 1) 3%, rgba(238, 247, 24
 .mission h1 {
     font-size: 90px;
 }
- 
-.mission-content {
-    padding-top: 90px;
-}
 .adventure {
  background: #000000;
 background: linear-gradient(330deg, rgba(0, 0, 0, 1) 0%, rgba(0, 1, 13, 1) 100%);;
 }
-.adventure-content {
-    padding: 90px 0px;
-}
+
 .adventure h1 {
     font-size: 90px;
      text-shadow: 4px 12px 15px rgba(0, 180, 216, 0.7);
